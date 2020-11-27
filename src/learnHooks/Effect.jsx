@@ -1,9 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-const State3 = (props) => {
+const Effect = (props) => {
     const [state, setState] = useState(props)
     const { name, price } = state
+
+    useEffect(() => {
+        console.log('this is like coponentDidMount or componentDidUpdate');
+    })
     
+    useEffect(() => {
+        console.log('this is like coponentDidMount');
+    }, [])
+
+    useEffect(() => {
+        console.log('this callback is for name only.');
+    }, [name])
 
     return (
         <>
@@ -16,9 +27,9 @@ const State3 = (props) => {
     )
 }
 
-State3.defaultProps = {
+Effect.defaultProps = {
     name: "",
     price: 1000
 }
 
-export default State3
+export default Effect
