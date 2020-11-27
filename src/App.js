@@ -1,12 +1,11 @@
 import React from 'react'
-import State2 from "./learnHooks/State2"
+import State3 from "./learnHooks/State3"
 
 
 const App = () => {
   return (
     <div>
-      This is a template for react app
-      <State2 />
+      <State3 />
       
     </div>
   );
