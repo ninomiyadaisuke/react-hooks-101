@@ -1,11 +1,12 @@
 import React from 'react'
-import State3 from "./learnHooks/State3"
+import Effect from './learnHooks/Effect';
+
 
 
 const App = () => {
   return (
     <div>
-      <State3 />
+      <Effect />
       
     </div>
   );
